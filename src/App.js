@@ -17,7 +17,7 @@ function App(){
          { 
             let newProducts = products.map(products => { 
                 if(products.id === id){
-                    products.count = products.count - 1
+                    // products.count = products.count - 1
                 }
                     return products 
                 })
