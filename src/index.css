@@ -1,0 +1,30 @@
+
+.input_elem{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.product_card{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 20px 170px;
+    background-color: rgb(75, 163, 225);
+
+    outline: 2px solid black;
+    box-shadow: 5px 5px 10px black;
+}
+
+.input_elem > input {
+    outline: 2px solid black;
+    box-shadow: 5px 5px 10px black;
+}
+.buttonM {
+    background-color: rgb(32, 85, 182);
+
+}
+.buttonP {
+    background-color: rgb(139, 203, 249);
+
+}
