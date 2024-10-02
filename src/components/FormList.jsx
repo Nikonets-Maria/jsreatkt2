@@ -1,7 +1,7 @@
-import { useState } from "react"
+
 import Form from "./Form"
 function FormList(props){
-    const {products, deleteProduct, createProduct, MinusButton, PlusButton} = props
+    const {products, deleteProduct,  MinusButton, PlusButton} = props
     return(
         <div>
             <div>FormList</div>
@@ -12,7 +12,6 @@ function FormList(props){
                                 price={elem.price}
                                 count={elem.count}
                                 deleteProduct={deleteProduct}
-                                createProduct={createProduct}
                                 MinusButton={MinusButton}
                                 PlusButton={PlusButton}
                                 />
