@@ -17,19 +17,22 @@ function App(){
          { 
             let newProducts = products.map(products => { 
                 if(products.id === id){
-                    // products.count = products.count - 1
+                    products.count = products.count - 1
                 }
                     return products 
                 })
                 setProducts(newProducts)
             }
 
-            function PlusButton(id, count){
-                // let newProducts = products.map(products => 
-                //     { if(products.id === id)
-                //             {products.count = products.count+1}
-                //         return products })
-                //     setProducts(newProducts)
+            function PlusButton(id){
+                let newProducts = products.map(products => 
+                    { if(products.id === id)
+                        if (products.count < 25) {
+                            {products.count = products.count+1}
+                        }
+                        else{alert("Достигнуто маскимальное колличество")}
+                        return products })
+                    setProducts(newProducts)
             }
         
 
@@ -45,7 +48,7 @@ function App(){
     return(
         <div>
             <AddForm createProduct={createProduct}/>
-            <FormList products ={products} deleteProduct ={deleteProduct} createProduct={createProduct} PlusButton ={PlusButton} MinusButton={MinusButton}/>
+            <FormList products ={products} deleteProduct ={deleteProduct}  PlusButton ={PlusButton} MinusButton={MinusButton}/>
         </div>
     )
 }
